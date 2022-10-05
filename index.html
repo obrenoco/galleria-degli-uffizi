@@ -4,12 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <title>BOILERPLATE</title>
+    <title>Galleria degli Uffizi</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello World!!</h1>
+  <body class="bg-black h-screen">
+    <main class="text-white">
+      <header
+        class="fixed top-14 left-8 flex flex-col gap-2 [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
+      >
+        <div></div>
+        <div></div>
+        <div></div>
+      </header>
+
+      <section
+        id="section-1"
+        class="flex flex-col h-screen items-center justify-center mt-10 [&>*]:text-5xl [&>*]:uppercase"
+      >
+        <h1 class="-m-5 z-10">Galleria</h1>
+        <div>
+          <img
+            src="https://s5.static.brasilescola.uol.com.br/img/2018/03/davinci.jpg"
+            alt=""
+            width="250px"
+          />
+        </div>
+        <h1 class="-m-5">degli</h1>
+        <h1 class="m-5">Uffizi</h1>
+      </section>
+    </main>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
