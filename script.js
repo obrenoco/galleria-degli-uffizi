@@ -17,12 +17,12 @@ window.addEventListener("load", () => {
       { scale: 1 },
       {
         scale: 1.1,
-        opacity: 0,
+        opacity: 0.2,
         scrollTrigger: {
           trigger: "#section-1",
           start: "15% 10%",
           end: "bottom -100%",
-          scrub: 1,
+          scrub: 1.5,
         },
       }
     )
@@ -30,13 +30,13 @@ window.addEventListener("load", () => {
       "img",
       { scale: 1 },
       {
-        scale: 1.2,
-        opacity: 0,
+        scale: 1.8,
+        y: 50,
         scrollTrigger: {
-          trigger: "img",
-          start: "0% 10%",
+          trigger: "#section-1",
+          start: "20% 20%",
           end: "bottom -100%",
-          scrub: 1,
+          scrub: 1.5,
         },
       }
     );

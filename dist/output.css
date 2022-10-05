@@ -607,6 +607,14 @@ video {
   width: 16rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -623,6 +631,14 @@ video {
   gap: 0.5rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -636,14 +652,33 @@ video {
   padding: 1rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -670,6 +705,25 @@ video {
   line-height: 1;
 }
 
+.\[\&\>\*\]\:text-sm>* {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.\[\&\>\*\]\:text-xs>* {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.\[\&\>\*\]\:text-6xl>* {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .\[\&\>\*\]\:uppercase>* {
   text-transform: uppercase;
+}
+
+.\[\&\>\*\]\:capitalize>* {
+  text-transform: capitalize;
 }
