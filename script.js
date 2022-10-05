@@ -35,7 +35,6 @@ window.addEventListener("load", () => {
         opacity: 0,
         scrollTrigger: {
           trigger: "#section-1",
-          markers: true,
           start: "15% 10%",
           end: "bottom -100%",
           scrub: 1.5,
