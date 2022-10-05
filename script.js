@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
           trigger: "#section-1",
           start: "15% 10%",
           end: "bottom -100%",
-          scrub: 1.5,
+          scrub: 1,
         },
       }
     )
@@ -33,10 +33,10 @@ window.addEventListener("load", () => {
         scale: 1.2,
         opacity: 0,
         scrollTrigger: {
-          trigger: "#section-1",
-          start: "15% 10%",
+          trigger: "img",
+          start: "0% 10%",
           end: "bottom -100%",
-          scrub: 1.5,
+          scrub: 1,
         },
       }
     );
