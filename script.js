@@ -5,9 +5,8 @@ window.addEventListener("load", () => {
   tlSection1
     .from("h1", { y: 20, opacity: 0 })
     .from(
-      "img",
+      "#section-1 img",
       {
-        opacity: 0,
         scale: 0.8,
       },
       0
@@ -17,7 +16,6 @@ window.addEventListener("load", () => {
       { scale: 1 },
       {
         scale: 1.1,
-        opacity: 0.2,
         scrollTrigger: {
           trigger: "#section-1",
           start: "15% 10%",
@@ -25,19 +23,19 @@ window.addEventListener("load", () => {
           scrub: 1.5,
         },
       }
-    )
-    .fromTo(
-      "img",
-      { scale: 1 },
-      {
-        scale: 1.8,
-        y: 50,
-        scrollTrigger: {
-          trigger: "#section-1",
-          start: "20% 20%",
-          end: "bottom -100%",
-          scrub: 1.5,
-        },
-      }
     );
+  // .fromTo(
+  //   "img",
+  //   { scale: 1 },
+  //   {
+  //     scale: 1.8,
+  //     y: 50,
+  //     scrollTrigger: {
+  //       trigger: "#section-1",
+  //       start: "20% 20%",
+  //       end: "bottom -100%",
+  //       scrub: 1.5,
+  //     },
+  //   }
+  // );
 });

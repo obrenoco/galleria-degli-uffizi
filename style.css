@@ -5,7 +5,12 @@ body {
   margin: 0;
 }
 
-#section-1 {
+h1, h2 , #section-4{
   font-family: 'Eagle Lake', cursive;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
 }
 

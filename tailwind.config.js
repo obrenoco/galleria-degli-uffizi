@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        "1/2": "1px"
-      }
+        "1/2": "1px",
+      },
+      fontFamily: {
+        sans: "font-family: 'Eagle Lake', cursive",
+      },
     },
   },
   plugins: [],
-}
+};
