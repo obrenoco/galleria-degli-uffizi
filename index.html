@@ -20,7 +20,8 @@
   <body class="bg-black h-screen">
     <main class="text-white overflow-hidden">
       <button
-        class="fixed top-14 left-8 flex h-fit flex-col gap-2 hover:cursor-pointer [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
+        onclick="openMenu()"
+        class="fixed top-14 left-8 z-50 flex h-fit flex-col gap-2 [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
       >
         <div></div>
         <div></div>
@@ -45,7 +46,7 @@
       </nav>
 
       <section
-        id="section-1"
+        id="section-main"
         class="flex flex-col h-screen items-center justify-center mt-10 [&>*]:text-5xl [&>*]:uppercase text-yellow-300"
       >
         <h1 class="-m-5 z-10">Galleria</h1>
@@ -84,13 +85,13 @@
           <img
             src="https://www.theflorentine.net/wp-content/uploads/2021/11/Ruysch-still-life-Deposits-Uffizi.jpg"
             alt=""
-            class="rounded-t-full w-20 object-cover ml-auto -z-10 backdrop-brightness-50 opacity-50"
+            class="rounded-t-full w-20 object-cover ml-auto -z-10 backdrop-brightness-50 opacity-70"
             width="800px"
             height="586px"
             style="width: 200px; height: 386px; object-fit: cover"
           />
         </div>
-        <p class="w-72 m-auto -mt-8 text-2xl">
+        <p class="w-72 m-auto -mt-12 text-2xl">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quas
           distinctio? Non, alias architecto iusto expedita exercitationem
           molestias quia, accusantium quas laborum quaerat necessitatibus natus
@@ -104,9 +105,9 @@
         </h2>
         <div>
           <div
-            class="relative w-full flex gap-14 snap-x snap-mandatory overflow-x-auto pb-14 [&>*]:snap-center [&>*]:shrink-0 [&>*]:w-52 [&>*]:flex [&>*]:flex-col [&>*]:gap-4"
+            class="relative w-full flex gap-10 snap-x snap-mandatory overflow-x-auto [&>*]:snap-center [&>*]:shrink-0 [&>*]:w-52 [&>*]:flex [&>*]:flex-col [&>*]:gap-4"
           >
-            <div class="mt-2">
+            <div class="-mt-2">
               <img
                 src="https://theculturetrip.com/wp-content/uploads/2019/09/mntnpm.jpg"
                 alt=""
@@ -130,7 +131,7 @@
                 <p>Paolo Caliari Detto Paolo Veronese</p>
               </div>
             </div>
-            <div class="mt-14 -z-10">
+            <div class="mt-8 -z-10">
               <img
                 src="https://theculturetrip.com/wp-content/uploads/2019/09/mntnpm.jpg"
                 alt=""
@@ -156,7 +157,7 @@
         </div>
       </section>
 
-      <section id="section-4" class="text-center pt-14 pb-32">
+      <section id="section-4" class="text-center pt-2 pb-32 -mt-8">
         <div class="text-4xl leading-relaxed z-10">
           <h3>Ensemble</h3>
           <h3>elles voulaient</h3>
