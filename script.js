@@ -10,7 +10,7 @@ const firstLoad = () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     firstLoad();
-  }, 2000);
+  }, 1000);
 });
 
 function openMenu() {
