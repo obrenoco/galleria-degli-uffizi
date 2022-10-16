@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();
 const firstLoad = () => {
-  tl.to("#splashScreen", { x: "-100vw", duration: 0.8, ease: "expo" })
+  tl.to("#splashScreen", { x: "-100vw", duration: 0.5, ease: "expo" })
     .to("#splashScreen", { display: "none" })
     .fromTo("main", { opacity: 0 }, { opacity: 1 });
 };
