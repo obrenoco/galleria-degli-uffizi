@@ -12,16 +12,26 @@
       href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
 
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Galleria degli Uffizi</title>
   </head>
   <body class="bg-black h-screen">
+    <div
+      id="splashScreen"
+      class="w-screen h-screen fixed bg-white z-50 flex items-center justify-center"
+    >
+      <p class="text-4xl font-bold">Loading...</p>
+    </div>
     <main class="text-white overflow-hidden">
       <button
         onclick="openMenu()"
-        class="fixed top-14 left-8 z-50 flex h-fit flex-col gap-2 [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
+        class="fixed top-14 left-8 z-30 flex h-fit flex-col gap-2 [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
       >
         <div></div>
         <div></div>
@@ -157,7 +167,20 @@
         </div>
       </section>
 
-      <section id="section-4" class="text-center pt-2 pb-32 -mt-8">
+      <section class="mb-40 flex flex-col gap-6">
+        <h3 class="text-5xl whitespace-nowrap relative -left-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit Alias in Lorem
+          ipsum dolor sit amet consectetur adipisicing elit Alias in Lorem ipsum
+          dolor sit amet consectetur adipisicing elit Alias in
+        </h3>
+        <h3 class="text-5xl whitespace-nowrap relative -left-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit Alias in Lorem
+          ipsum dolor sit amet consectetur adipisicing elit Alias in Lorem ipsum
+          dolor sit amet consectetur adipisicing elit Alias in
+        </h3>
+      </section>
+
+      <section id="section-4" class="text-center pt-2 pb-40 -mt-8">
         <div class="text-4xl leading-relaxed z-10">
           <h3>Ensemble</h3>
           <h3>elles voulaient</h3>
