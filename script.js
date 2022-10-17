@@ -87,16 +87,16 @@ function textSlider() {
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#textSlider #text1",
-      start: "top bottom",
+      start: "top 105%",
       end: "bottom -20%",
       scrub: 1.5,
     },
   });
 
-  tl.fromTo("#textSlider #text1", { x: "-200%" }, { x: "0" }).fromTo(
+  tl.fromTo("#textSlider #text1", { x: "-30%" }, { x: "0" }).fromTo(
     "#textSlider #text2",
     { x: "0" },
-    { x: "-200%" },
+    { x: "-30%" },
     0
   );
 }
@@ -107,7 +107,6 @@ function artText() {
       trigger: "#artText",
       start: "center 60%",
       end: "bottom 20%",
-      markers: true,
       toggleActions: "play reverse restart reverse",
       pin: true,
     },

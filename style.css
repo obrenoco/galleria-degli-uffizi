@@ -6,7 +6,7 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-h1, h2, h3, h4, nav{
+h1, h2, h3, h4, nav, #splashScreen{
   font-family: 'Eagle Lake', cursive;
   line-height: 1.3;
 }
@@ -18,4 +18,8 @@ h1 {
 
 section {
   padding: 1rem;
+}
+
+#textSlider #text2{
+  -webkit-text-stroke: 2px white
 }
