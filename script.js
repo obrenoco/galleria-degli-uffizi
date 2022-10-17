@@ -107,7 +107,7 @@ function artText() {
       trigger: "#artText",
       start: "center 60%",
       end: "bottom 20%",
-      // markers: true,
+      markers: true,
       toggleActions: "play reverse restart reverse",
       pin: true,
     },
