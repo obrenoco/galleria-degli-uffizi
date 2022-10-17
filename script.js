@@ -37,6 +37,7 @@ function main() {
           start: "15% 10%",
           end: "bottom -100%",
           scrub: 1.5,
+          toggleActions: "play reverse restart reverse",
         },
       }
     )
@@ -57,7 +58,7 @@ function main() {
 }
 
 function collectionBanner() {
-  const tl2 = gsap.timeline({
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#collectionBanner",
       start: "top 60%",
@@ -66,11 +67,11 @@ function collectionBanner() {
     },
   });
 
-  tl2.fromTo("#collectionBanner", { opacity: 0 }, { opacity: 1 });
+  tl.fromTo("#collectionBanner", { opacity: 0 }, { opacity: 1 });
 }
 
 function collectionCarrousel() {
-  const tl2 = gsap.timeline({
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: "#collectionCarrousel",
       start: "top 60%",
@@ -79,7 +80,26 @@ function collectionCarrousel() {
     },
   });
 
-  tl2.fromTo("#collectionCarrousel", { opacity: 0 }, { opacity: 1 });
+  tl.fromTo("#collectionCarrousel", { opacity: 0 }, { opacity: 1 });
+}
+
+function textSlider() {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#textSlider #text1",
+      start: "top bottom",
+      end: "bottom -20%",
+      markers: true,
+      scrub: true,
+    },
+  });
+
+  tl.fromTo("#textSlider #text1", { x: "-200%" }, { x: "0" }).fromTo(
+    "#textSlider #text2",
+    { x: "0" },
+    { x: "-200%" },
+    0
+  );
 }
 
 window.addEventListener("load", () => {
@@ -89,4 +109,8 @@ window.addEventListener("load", () => {
 });
 
 const masterTl = gsap.timeline();
-masterTl.add(main).add(collectionBanner).add(collectionCarrousel);
+masterTl
+  .add(main)
+  .add(collectionBanner)
+  .add(collectionCarrousel)
+  .add(textSlider);
