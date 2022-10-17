@@ -89,7 +89,6 @@ function textSlider() {
       trigger: "#textSlider #text1",
       start: "top bottom",
       end: "bottom -20%",
-      markers: true,
       scrub: true,
     },
   });
