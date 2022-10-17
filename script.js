@@ -101,6 +101,19 @@ function textSlider() {
   );
 }
 
+function artText() {
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: "#artText",
+      start: "center 60%",
+      end: "bottom 20%",
+      // markers: true,
+      toggleActions: "play reverse restart reverse",
+      pin: true,
+    },
+  });
+}
+
 window.addEventListener("load", () => {
   setTimeout(() => {
     intro();
@@ -112,4 +125,5 @@ masterTl
   .add(main)
   .add(collectionBanner)
   .add(collectionCarrousel)
-  .add(textSlider);
+  .add(textSlider)
+  .add(artText);
