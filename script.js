@@ -1,11 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
 function openMenu() {
-  console.log("ABRE MENU");
+  const tl = gsap.timeline();
+  tl.to("#menu", { x: 0, duration: 0.7, ease: "expo" });
 }
 
 function closeMenu() {
-  console.log("FECHA MENU");
+  const tl = gsap.timeline();
+  tl.to("#menu", { x: "-100%", duration: 0.7, ease: "expo" });
 }
 
 function intro() {
@@ -59,11 +61,25 @@ function collectionBanner() {
     scrollTrigger: {
       trigger: "#collectionBanner",
       start: "top 60%",
-      end: "bottom top",
+      end: "bottom 20%",
+      toggleActions: "play reverse restart reverse",
     },
   });
 
   tl2.fromTo("#collectionBanner", { opacity: 0 }, { opacity: 1 });
+}
+
+function collectionCarrousel() {
+  const tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#collectionCarrousel",
+      start: "top 60%",
+      end: "bottom 20%",
+      toggleActions: "play reverse restart reverse",
+    },
+  });
+
+  tl2.fromTo("#collectionCarrousel", { opacity: 0 }, { opacity: 1 });
 }
 
 window.addEventListener("load", () => {
@@ -73,4 +89,4 @@ window.addEventListener("load", () => {
 });
 
 const masterTl = gsap.timeline();
-masterTl.add(main).add(collectionBanner);
+masterTl.add(main).add(collectionBanner).add(collectionCarrousel);

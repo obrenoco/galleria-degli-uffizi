@@ -31,7 +31,7 @@
     <main class="text-white overflow-hidden">
       <button
         onclick="openMenu()"
-        class="fixed top-14 left-8 z-30 flex h-fit flex-col gap-2 [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
+        class="fixed top-14 left-8 z-20 flex h-fit flex-col gap-2 [&>*]:w-8 [&>*]:h-1/2 [&>*]:bg-white"
       >
         <div></div>
         <div></div>
@@ -39,9 +39,10 @@
       </button>
 
       <nav
-        class="bg-red-400 w-screen h-screen fixed z-20 p-4 -translate-x-full"
+        id="menu"
+        class="bg-white w-screen h-screen fixed z-20 p-4 -translate-x-full text-black"
       >
-        <button class="mb-8">
+        <button class="mb-8 relative top-6" onclick="closeMenu()">
           <p class="text-4xl">X</p>
         </button>
         <ul
@@ -109,7 +110,7 @@
         </p>
       </section>
 
-      <section id="section-3" class="mt-20">
+      <section id="collectionCarrousel" class="mt-20">
         <h2 class="text-6xl w-full text-center text-yellow-500 -mb-4 z-10">
           Collezione
         </h2>
